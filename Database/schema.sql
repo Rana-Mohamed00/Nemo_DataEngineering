@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS cleansed_telemetry (
     source TEXT,
     time INTERVAL,
     session_time INTERVAL,
-    driver INTEGER
+    driver DOUBLE PRECISION
 );
 
 CREATE TABLE IF NOT EXISTS dead_letter (
