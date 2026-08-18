@@ -5,7 +5,7 @@ from apache_beam.options.pipeline_options import PipelineOptions
 from ApacheBeam.config import TAG_CLEAN, TAG_DEAD_LETTER
 from ApacheBeam.validation import ValidateAndCleanF1DoFn
 
-from database import insert_cleansed_data, insert_dead_letter
+from Database.database import insert_cleansed_data, insert_dead_letter
 
 
 def run_pipeline(input_file_path):
