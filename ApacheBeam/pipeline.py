@@ -14,7 +14,7 @@ def run_pipeline(input_file_path):
     with beam.Pipeline(options=pipeline_options) as pipeline:
         raw_lines = (
             pipeline
-            | 'Read CSV File' >> beam.io.ReadFromText(input_file_path)
+            | 'Read CSV File' >> beam.io.ReadFromText(input_file_path) # This File will come from automation 
         )
 
         validated_results = (

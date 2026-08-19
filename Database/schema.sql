@@ -1,4 +1,3 @@
-
 CREATE TABLE IF NOT EXISTS cleansed_telemetry (
     date TIMESTAMP,
     rpm DOUBLE PRECISION,

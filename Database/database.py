@@ -8,7 +8,7 @@ def get_connection():
             host="localhost",
             database="F1_Telemetry",
             user="postgres",
-            password=os.getenv("DB_PASSWORD"),
+            password="rana2006", #DB_PASSWORD   os.getenv("rana2006")
             port="5432"
         )
         return connection
