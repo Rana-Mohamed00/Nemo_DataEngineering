@@ -1,15 +1,15 @@
 import os
+from dotenv import load_dotenv
 import psycopg2
-
-
 def get_connection():
     try:
+        load_dotenv()
         connection = psycopg2.connect(
-            host="localhost",
-            database="F1_Telemetry",
-            user="postgres",
-            password="rana2006", #DB_PASSWORD   os.getenv("rana2006")
-            port="5432"
+            host= os.getenv("DB_HOST"),
+            database= os.getenv("DB_NAME"),
+            user= os.getenv("DB_USER"),
+            password= os.getenv("DB_PASSWORD"),
+            port= os.getenv("DB_PORT")
         )
         return connection
 
